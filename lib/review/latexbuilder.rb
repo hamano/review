@@ -299,10 +299,9 @@ module ReVIEW
     end
 
     def source(lines, caption)
-      puts '\begin{reviewlist}'
-      source_header caption
+      puts '\begin{reviewsource}{' + caption + '}'
       source_body lines
-      puts '\end{reviewlist}'
+      puts '\end{reviewsource}'
       puts ""
     end
 

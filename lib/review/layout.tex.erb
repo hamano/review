@@ -11,6 +11,7 @@
 \usepackage{float}
 \usepackage{alltt}
 \usepackage{amsmath}
+\usepackage{listings}
 
 %% if you use @<u>{} (underline), use jumoline.sty
 %%\usepackage{jumoline}
@@ -61,6 +62,10 @@
 \newenvironment{reviewlist}{%
   \begin{shaded}\small\setlength{\baselineskip}{1.3zw}\begin{alltt}}{%
   \end{alltt}\end{shaded}\par\vspace*{0.5zw}}
+
+\lstnewenvironment{reviewsource}[1]
+  {\lstset{language=C, caption=#1}}
+  {}
 
 \newenvironment{reviewcmd}{%
   \color{white}\medskip\small\begin{shadedb}\setlength{\baselineskip}{1.3zw}\begin{alltt}}{%
